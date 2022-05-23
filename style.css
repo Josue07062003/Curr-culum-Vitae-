@@ -1,0 +1,123 @@
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+html{
+  height: 100%;
+}
+body{
+  font-family: 'Gill Sans'.'Gill Sans MT'.Calibri.;
+  font-size: 1.2rem;
+  min-height: 100%;
+}
+
+.grid-container>*{
+  box-shadow: -1px 1px 7px 0px #rgba(0,0,0,1);
+  border-radius:4px ;
+  padding: 10px;
+  text-align: center;
+}
+.header{
+  grid-area:header;
+  background-color: aquamarine;
+}
+.navbar{
+  grid-area: navbar;
+  background-color: bisque;
+}
+.main{
+  grid-area: main;
+  background-color: cadetblue;
+}
+.sidebar{
+  grid-area: sidebar;
+  background-color:chocolate ;
+}
+.footer{
+  grid-area: footer;
+  background-color: cornflowerblue;
+}
+.grid-container{
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "header" "navbar" "main" "sidebar" "footer"
+}
+@media(min-width:400px){
+  .grid-container{
+  grid-template:
+  "header header" 100px
+  "navbar navbar" 50px
+  "sidebar main" auto
+  "footer footer" 100px/200px auto;
+  
+}
+  
+}
+@media(min-widht:600px){
+  .grid-container{
+    grid-template: 
+    "header header"
+    "navbar navbar"
+    "sidebar main"
+    "footer footer";
+  }
+}
+@media(min-widht:900px){
+  .grid-container{
+    grid-template: 
+    "header header header" 100px
+    "navbar main sidebar" auto 
+    "footer footer footer"100px/200px auto;
+  }
+  
+}
+
+ .p1{
+     padding: 9px 10px;
+     font-size: 11px;
+}
+.skill-container{}
+.skill{
+    text-align: right;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color:white;
+    }    
+.html{
+    width: 99%;
+    background-color: white;
+}
+.css{
+    width: 90%;
+    background-color: white;
+    }
+.java{
+    width: 70%;
+    background-color: white;
+    }    
+.jquery{
+    width: 70%;
+    background-color: white;
+    }    
+.left{
+    background-color: rgb(50,172,131);
+    width: 50px;
+    height: 40%;
+    float:left;
+    
+}
+.perfil-img{
+    height: 180px;
+    width: 180px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    border: 10px, solid #fbb03b;
+    box-shadow: 6px 7px 9px 5px #fbb03b73;
+    }
+.perfil-img{
+    width: 100%;
+    border-radius: 50%;
+}
